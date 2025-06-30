@@ -1,74 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
- <title>Get Your Auto Warranty Quote</title>
- <style>
-   body {
-     margin: 0;
-     font-family: Arial, sans-serif;
-     background: #f5f7fa;
-     color: #333;
-     line-height: 1.6;
-   }
-   .container {
-     max-width: 600px;
-     margin: 60px auto;
-     padding: 30px;
-     background: #fff;
-     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-     border-radius: 8px;
-   }
-   h1 {
-     color: #003366;
-     font-size: 28px;
-     margin-bottom: 10px;
-   }
-   p {
-     font-size: 16px;
-     margin-bottom: 20px;
-   }
-   form input, form select {
-     width: 100%;
-     padding: 12px;
-     margin-bottom: 15px;
-     border: 1px solid #ccc;
-     border-radius: 4px;
-     font-size: 14px;
-   }
-   button {
-     background: #007BFF;
-     color: #fff;
-     padding: 14px;
-     border: none;
-     border-radius: 4px;
-     font-size: 16px;
-     cursor: pointer;
-     width: 100%;
-   }
-   button:hover {
-     background: #0056b3;
-   }
-   .disclaimer {
-     font-size: 12px;
-     color: #777;
-     margin-top: 15px;
-   }
- </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Auto Warranty Quote | Affordable Extended Car Protection</title>
+  <meta name="description" content="Get a fast, free auto warranty quote and protect your car from costly repairs. Affordable extended warranties available now.">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1e90ff;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select, button {
+      margin-top: 5px;
+      padding: 10px;
+      font-size: 1em;
+    }
+    button {
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #0d6efd;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+      margin: 20px 0;
+    }
+    section.faq {
+      margin-top: 30px;
+    }
+    section.faq h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    section.faq p {
+      margin: 5px 0;
+    }
+  </style>
 </head>
 <body>
- <div class="container">
-   <h1>Protect Your Car & Your Wallet</h1>
-   <p>Get a fast, free auto warranty quote in minutes. Avoid unexpected repair costs and drive with confidence.</p>
-   <form action="https://formspree.io/f/mgvydvra" method="POST">
-     <input type="text" name="name" placeholder="Full Name" required>
-     <input type="email" name="email" placeholder="Email Address" required>
-     <input type="tel" name="phone" placeholder="Phone Number" required>
-     <input type="text" name="vehicle" placeholder="Vehicle Year, Make & Model" required>
-     <button type="submit">Get My Free Quote</button>
-   </form>
-   <p class="disclaimer">Your information is secure and used only to provide your quote.</p>
- </div>
+  <header>
+    <h1>Get Your Free Auto Warranty Quote Today</h1>
+  </header>
+  <main>
+    <form action="https://formspree.io/f/mgvydvra" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="vehicle">Vehicle (Year, Make, Model)</label>
+      <input type="text" id="vehicle" name="vehicle" required>
+
+      <button type="submit">Get My Free Quote</button>
+    </form>
+
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <p><strong>How does it work?</strong> Submit your details and we'll reach out with your free, no-obligation auto warranty quote.</p>
+      <p><strong>What vehicles qualify?</strong> Most cars, trucks, and SUVs are eligible for coverage.</p>
+      <p><strong>How soon will I be contacted?</strong> Usually within 1 business day.</p>
+    </section>
+  </main>
+  <footer>
+    <p>Your information is secure and only used to provide your quote.</p>
+  </footer>
 </body>
 </html>
